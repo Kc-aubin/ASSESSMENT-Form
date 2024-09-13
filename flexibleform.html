@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexible form assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Your password is between 4 and 12 characters</small>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group error">
+                <label for="input">Input Text Label</label>
+                <div>
+                <input type="text" id="input" value="Typing ">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <small class="error-message">Error message informing me of a problem</small>
+            </div>
+             </div>
+            
+            <div class="form-group">
+                <div class="checkboxes"> 
+                    <input type="checkbox"> Remember me</div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkboxes">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Off</p>
+                </div>
+            </div>
+
+            <div class="form-group radio">
+                <div class="customed-radio">
+                    <label class="radio-container">
+                        <input type="radio" name="radio" value="1">
+                        <span class="checkmark"></span>
+                        Radio selection 1
+                    </label>
+                    
+                    <label class="radio-container">
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                        Radio selection 2
+                    </label>
+                    
+                    <label class="radio-container">
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                        Radio selection 3
+                    </label>
+                </div>
+            </div>
+
+            <label class="dropdown">Dropdown Title</label>
+            <div class="form-group">
+                <div class="customed-dropdown">
+                    <button type="button" class="dropdown-btn">Dropdown option</button>
+                    <div class="dropdown-options">
+                        <div class="option">Dropdown option</div>
+                        <div class="option">Dropdown option 1</div>
+                        <div class="option">Dropdown option 2</div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn cancel">Cancel</button>
+                <button type="submit" class="btn next">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
